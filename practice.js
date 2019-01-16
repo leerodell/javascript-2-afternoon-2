@@ -17,9 +17,9 @@ var arr = [10,20,30];
   Return the first item in the given array.
 */
 
+function first(arr){return arr[0]};
+
 //Code Here
-
-
 
 ////////// PROBLEM 2 //////////
 
@@ -33,6 +33,7 @@ var arr = [40,50,60];
 */
 
 //Code Here
+function last(arr){return arr[2]};
 
 
 
@@ -46,6 +47,7 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
   Create a function named 'looper' that is given family as it's only argument. 
   Loop through the given array and alert every item in the array.
 */
+
 
 //Code Here
 
@@ -61,6 +63,10 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Write a function called reversedLooper that is given letters as it's only argument. 
   Loop through the given array backwards alerting every item in the array starting at the end.\
 */
+
+function reversedLooper (letters){
+  for (let i = letters.length - 1; i>= 0; i--);
+}
 
 //Code Here
 
@@ -78,7 +84,15 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
+var evens = [];
 
+function evenFinder (nums){
+  for (var i = 0; i < nums.length; i++) {
+
+    if ((nums[i] % 2) != 1) {
+        evens.push(nums[i]);
+            console.log(evens);
+}
 
 
 
